@@ -1,0 +1,54 @@
+﻿@model CSMS.Models.Officer
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Officer Registration</h2>
+ 
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="officer_reg">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="officer_name" class="control-label">Name</label>
+                <input asp-for="officer_name" class="form-control" />
+                <span asp-validation-for="officer_name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="officer_email" class="control-label">Email</label>
+                <input type="email" asp-for="officer_email" class="form-control" />
+                <span asp-validation-for="officer_email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="officer_emp_id" class="control-label">Employee ID</label>
+                <input asp-for="officer_emp_id" class="form-control" />
+                <span asp-validation-for="officer_emp_id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="officer_password" class="control-label">Password</label>
+                <input asp-for="officer_password" type="password" class="form-control" />
+                <span asp-validation-for="officer_password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="officer_workplace" class="control-label">Workplace</label>
+                
+                <select asp-for="officer_workplace" class="form-control">
+                    <option value="Dhaka">Dhaka</option>
+                    <option value="Chandpur">Chandpur</option>
+                    <option value="Cumilla">Cumilla</option>
+                </select>
+                <span asp-validation-for="officer_workplace" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit" class="btn  btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-controller="OfficerLogin" asp-action="Index">Login</a>
+</div>

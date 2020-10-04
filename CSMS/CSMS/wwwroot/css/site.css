@@ -1,0 +1,71 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
+for details on configuring this project to bundle and minify static web assets. */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+.userSelect {
+    position: absolute;
+    top: 45%;
+    left: 35%;
+}
+
+.user {
+    width: 150px;
+    height: 160px;
+    background: orange;
+    float: left;
+    margin-right: 10px;
+    text-align: center;
+    border-radius:5px;
+}
+
+    .user i {
+        font-size: 100px;
+        color: #484848;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+.username {
+    height: 40px;
+    background: #ddd;
+    border-radius: 0px 0px 5px 5px;
+}
+.username p {
+        padding: 10px;
+}
+#officerlogin .loginform{
+    
+}

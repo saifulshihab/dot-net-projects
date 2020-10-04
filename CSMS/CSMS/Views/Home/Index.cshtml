@@ -1,0 +1,34 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<head>
+    <script src="https://kit.fontawesome.com/a215bce284.js" crossorigin="anonymous"></script>
+</head>
+<div class="userSelect">
+    <div class="user" style="background:#8abd2e">
+        <a asp-area="" asp-controller="OfficerLogin" asp-action="Login"> <i class="fas fa-user-secret"></i></a>
+        <div class="username">
+            <p>Officer</p>
+        </div>
+    </div>
+    <div class="user" style="background:#fbaa52">
+        <a asp-area="" asp-controller="OfficerUI" asp-action="Index"> <i class="fas fa-user"></i></a>
+        <div class="username">
+            <p>Headmaster</p>
+        </div>
+    </div>
+    <div class="user" style="background:#41a4ca">
+        <a asp-area="" asp-controller="OfficerUI" asp-action="Index"> <i class="fas fa-chalkboard-teacher"></i></a>
+         
+        <div class="username">
+            <p>Teacher</p>
+        </div>
+    </div>
+    <div class="user" style="background:#bf81db">
+        <a asp-area="" asp-controller="OfficerUI" asp-action="Index"> <i class="fas fa-users"></i></a>
+        <div class="username">
+            <p>Student</p>
+        </div>
+    </div>
+
+</div>

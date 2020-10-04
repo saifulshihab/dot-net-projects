@@ -1,0 +1,17 @@
+.actiontab-nav .navbtn input {
+  visibility: hidden;
+}
+.actiontab-nav .navbtn label {
+  color: white;
+  text-align: center;
+  padding: 7px;
+  cursor: pointer;
+}
+
+.navbtn input:checked + label {
+  border-bottom: 3px solid #ddd;
+  margin-right: -2px;
+}
+.navbtnwrap {
+  text-align: center;
+}

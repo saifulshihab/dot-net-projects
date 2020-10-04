@@ -1,0 +1,52 @@
+﻿@model CSMS.Models.Officer
+
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Officer</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.officer_name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.officer_name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.officer_email)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.officer_email)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.officer_emp_id)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.officer_emp_id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.officer_password)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.officer_password)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.officer_workplace)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.officer_workplace)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="officer_id" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

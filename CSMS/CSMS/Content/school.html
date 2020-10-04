@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Officer Dashboard</title>
+
+    <script src="https://kit.fontawesome.com/a215bce284.js" crossorigin="anonymous"></script>
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="head_pending_reg.css">
+    <link rel="stylesheet" href="school_tab.css">
+</head>
+
+<body>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="head_pending_reg.html">Headmaster Pending Registration</a>
+        <a href="#">Student Feedback</a>
+        <a href="#">FAQ</a>
+        <a href="#">Contact</a>
+    </div>
+    <!--Navbar-->
+    <div class="row tophead  bg-dark">
+
+        <div class="col-6">
+            <div class="row">
+                <div class="col-1">
+
+                    <button class="navbar-toggler menubtn" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i onclick="openNav()" onclick="closeNav()" class="fas fa-bars"></i>
+                    </button>
+                </div>
+                <div class="col-11">
+                    <div class="logo float-left d-inline">
+                        <a href="officer_dashboard.html">
+                            <img src="logo.png" alt="" style="width: 40px;">
+                        </a>
+                    </div>
+                    <div class="title d-inline">
+                        <h5>Centralized School Monitoring System</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 text-center">
+        </div>
+        <div class="col-3">
+            <div class="logout float-right">
+                <a class="btn btn-sm btn-warning" href=""><i class="fas fa-sign-out-alt"></i>Log out</a>
+            </div>
+        </div>
+
+    </div>
+    <div class="clear-fix"></div>
+    <div class="page-content">
+        <div class="container">
+            <div class="school_wrap">
+                <div class="school_name mb-5">
+                    <h1>Dhanmondi Govt High School</h1>
+                </div>
+                <div class="total_student">
+                    <div class="row">
+                        <div class="col">
+                            <h3 class="float-left">Total Number Of Student</h3>
+                            <span class="float-right">
+                                <h3>1298</h3>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="total_teacher">
+                    <div class="row">
+                        <div class="col">
+                            <h3 class="float-left">Total Teacher</h3>
+                            <span class="float-right">
+                                <h3>16</h3>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p class="text-secondary">Male Teacher 12</p>
+                            <p class="text-secondary">Female Teacher 4</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="attendance">
+                    <div class="row">
+                        <div class="col">
+                            <div class="attdays float-left">
+                                <h3 class="">Attendance</h3>
+                                <p class="text-secondary">Last 30 days</p>
+                            </div>
+                            <span class="float-right">
+                                <h3>88%</h3>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="actiontab mt-4">
+                <div class="actiontab-nav bg-secondary">
+                    <div class="row">
+
+                        <div class="col-3 navbtnwrap">
+                            <div class="navbtn">
+                                <input type='radio' value='1' name='radio' id='radio1' />
+                                <label for='radio1'>Headmaster</label>
+                            </div>
+                        </div>
+                        <div class="col-3 navbtnwrap">
+                            <div class="navbtn">
+                                <input type='radio' value='1' name='radio' id='radio2' />
+                                <label for='radio2'>All Teacher</label>
+                            </div>
+                        </div>
+                        <div class="col-3 navbtnwrap">
+                            <div class="navbtn">
+                                <input type='radio' value='1' name='radio' id='radio3' />
+                                <label for='radio3'>Student Feedback</label>
+                            </div>
+                        </div>
+                        <div class="col-3 navbtnwrap">
+                            <div class="navbtn">
+                                <input type='radio' value='1' name='radio' id='radio4' />
+                                <label for='radio4'>Assign Coordinator</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="actiontab-body">
+                    <div class="actiontab-content" id="headmaster">
+                        <div class="row mt-2">
+                            <div class="col-3">
+                                <h5>Headmaster Name:</h5>
+                                <h5>Employee ID:</h5>
+                                <h5>Qualification</h5>
+                                <h5>Phone Number</h5>
+                                <button class="btn btn-sm btn-success">Contact</button>
+                            </div>
+                            <div class="col-3">
+                                <h5>Md. Ariful Islam</h5>
+                                <h5>H1</h5>
+                                <h5>MBA</h5>
+                                <h5>+8801782555256</h5>
+                            </div>
+                            <div class="col-3"></div>
+                            <div class="col-3"></div>
+                        </div>
+                    </div>
+                    <div class="actiontab-content" id="allteacher">
+
+                        <div class="t-list">
+                            <table>
+                                <tr>
+                                    <th>Teacher EmpID</th>
+                                    <th>Teacher Name</th>
+                                    <th>Qualification</th>
+                                    <th>Performance</th>
+                                </tr>
+                                <tr>
+                                    <td>T1</td>
+                                    <td>Abdul Hakim</td>
+                                    <td>BBA</td>
+                                    <td>Good</td>
+                                </tr>
+                                <tr>
+                                    <td>T1</td>
+                                    <td>Abdul Hakim</td>
+                                    <td>BBA</td>
+                                    <td>Good</td>
+                                </tr>
+                                <tr>
+                                    <td>T1</td>
+                                    <td>Abdul Hakim</td>
+                                    <td>BBA</td>
+                                    <td>Good</td>
+                                </tr>
+                                <tr>
+                                    <td>T1</td>
+                                    <td>Abdul Hakim</td>
+                                    <td>BBA</td>
+                                    <td>Good</td>
+                                </tr>
+                                <tr>
+                                    <td>T1</td>
+                                    <td>Abdul Hakim</td>
+                                    <td>BBA</td>
+                                    <td>Good</td>
+                                </tr>
+
+                            </table>
+                        </div>
+                    </div>
+                    <div class="actiontab-content" id="stdfb">
+                        <div class="f-list">
+                            <table>
+                                <tr>
+                                    <th>Feedback ID</th>
+                                    <th>Feedback</th>
+                                </tr>
+                                <tr>
+                                    <td>f1</td>
+                                    <td>I am 0000. We need multimedioa classromm</td>
+                                </tr>
+
+                            </table>
+                        </div>
+                    </div>
+                    <div class="actiontab-content" id="assco">
+                        <form>
+                            <div class="form-group">
+                                <label for="">Select Co-ordinator</label>
+                                <select name="" id="" class="form-control">
+                                    <option value="">Saiful islam</option>
+                                    <option value="">Saimon Hotel</option>
+                                    <option value="">Roy Joy</option>
+                                    <option value="">Saiful islam</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-sm btn-primary">Assign</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+        </script>
+    <script type="text/javascript">
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+
+        $(document).ready(function () {
+            $("#headmaster").hide();
+            $("#allteacher").hide();
+            $("#stdfb").hide();
+            $("#assco").hide();
+            $("#radio1").click(function () {
+                $("#headmaster").show();
+                $("#allteacher").hide();
+                $("#stdfb").hide();
+                $("#assco").hide();
+            })
+            $("#radio2").click(function () {
+                $("#headmaster").hide();
+                $("#allteacher").show();
+                $("#stdfb").hide();
+                $("#assco").hide();
+            })
+            $("#radio3").click(function () {
+                $("#headmaster").hide();
+                $("#allteacher").hide();
+                $("#stdfb").show();
+                $("#assco").hide();
+            })
+            $("#radio4").click(function () {
+                $("#headmaster").hide();
+                $("#allteacher").hide();
+                $("#stdfb").hide();
+                $("#assco").show();
+            })
+        })
+    </script>
+</body>
+
+</html>

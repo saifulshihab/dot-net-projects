@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\css\head_pending_reg.css" />
+    <Content Remove="wwwroot\css\head_registration.css" />
+    <Content Remove="wwwroot\css\login.css" />
+    <Content Remove="wwwroot\css\school.css" />
+    <Content Remove="wwwroot\css\school_tab.css" />
+    <Content Remove="wwwroot\css\style.css" />
+    <Content Remove="wwwroot\images\logo.png" />
+    <Content Remove="wwwroot\lib\logo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\head_pending_reg.css" />
+    <None Include="wwwroot\css\head_registration.css" />
+    <None Include="wwwroot\css\login.css" />
+    <None Include="wwwroot\css\school.css" />
+    <None Include="wwwroot\css\school_tab.css" />
+    <None Include="wwwroot\css\style.css" />
+    <None Include="wwwroot\images\logo.png" />
+    <None Include="wwwroot\favicon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.10" />
+  </ItemGroup>
+
+</Project>

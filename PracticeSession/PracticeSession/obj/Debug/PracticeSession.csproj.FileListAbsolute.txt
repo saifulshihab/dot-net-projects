@@ -1,0 +1,7 @@
+D:\Dot Net Project\PracticeSession\PracticeSession\bin\Debug\PracticeSession.exe.config
+D:\Dot Net Project\PracticeSession\PracticeSession\bin\Debug\PracticeSession.exe
+D:\Dot Net Project\PracticeSession\PracticeSession\bin\Debug\PracticeSession.pdb
+D:\Dot Net Project\PracticeSession\PracticeSession\obj\Debug\PracticeSession.csprojAssemblyReference.cache
+D:\Dot Net Project\PracticeSession\PracticeSession\obj\Debug\PracticeSession.csproj.CoreCompileInputs.cache
+D:\Dot Net Project\PracticeSession\PracticeSession\obj\Debug\PracticeSession.exe
+D:\Dot Net Project\PracticeSession\PracticeSession\obj\Debug\PracticeSession.pdb

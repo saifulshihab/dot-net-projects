@@ -1,0 +1,43 @@
+﻿body {
+}
+h2 {
+    font-size: 30px;
+    font-family: bold;
+    margin-left: 473px;
+}
+
+}
+#header{
+    padding:20px;
+}
+.floatleft{
+    float:left;
+     
+}
+.floatright{
+    float : right;
+}
+.content_left{
+
+}
+.content_right{
+     
+}
+ 
+.txtBox {
+    width:500px;
+   
+   margin-left:25px;
+   margin-bottom:10px;
+}
+.dropdown {
+    
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    padding: 8px 10px;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+    top: 0px;
+    left: 60px;
+}

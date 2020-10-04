@@ -1,0 +1,36 @@
+.registration-form h2 {
+  background: #5cc45c;
+  display: inline-block;
+  padding: 5px 75px;
+  border-radius: 20px 0px 20px 0px;
+  margin-bottom: 20px;
+}
+.registration-form {
+  text-align: center;
+  background: #f8f9fa !important;
+  padding: 200px;
+}
+.registration-form i {
+  background: #e9ecef;
+  padding: 9px 9px 12px 11px;
+  margin-right: -5px;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+.registration-form form .form-group input {
+  width: 350px;
+  padding: 0.375rem 0.75rem;
+}
+.registration-form form .form-group select {
+  padding: 0.375rem 0.75rem;
+}
+.registration-form form .form-group input[type="text"]:focus + i {
+  color: blue;
+}
+.form-control {
+  display: inline;
+}
+
+form .btn {
+  width: 390px !important;
+}

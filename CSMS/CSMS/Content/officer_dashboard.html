@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Officer Dashboard</title>
+
+    <script src="https://kit.fontawesome.com/a215bce284.js" crossorigin="anonymous"></script>
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="head_pending_reg.html">Headmaster Pending Registration</a>
+        <a href="#">Student Feedback</a>
+        <a href="#">FAQ</a>
+        <a href="#">Contact</a>
+    </div>
+    <!--Navbar-->
+    <div class="row tophead  bg-dark">
+
+        <div class="col-6">
+            <div class="row">
+                <div class="col-1">
+
+                    <button class="navbar-toggler menubtn" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i onclick="openNav()" onclick="closeNav()" class="fas fa-bars"></i>
+                    </button>
+                </div>
+                <div class="col-11">
+                    <div class="logo float-left d-inline">
+                        <a href="officer_dashboard.html">
+                            <img src="logo.png" alt="" style="width: 40px;">
+                        </a>
+                    </div>
+                    <div class="title d-inline">
+                        <h5>Centralized School Monitoring System</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 text-center">
+        </div>
+        <div class="col-3">
+            <div class="logout float-right">
+                <a class="btn btn-sm btn-warning" href=""><i class="fas fa-sign-out-alt"></i>Log out</a>
+            </div>
+        </div>
+
+    </div>
+    <div class="clear-fix"></div>
+    <div class="" id="page_content">
+        <div class="row">
+            <div class="col-3">
+                <div class="school">
+                    <div class="school_name">
+                        <a href="school.html">
+                            <h5>Dhanmondi Boys High School</h5>
+                        </a>
+                    </div>
+                    <div class="school_info">
+                        <div class="info">
+                            <div class="number float-left">
+                                <h1 style="color: #1ca849;">877</h1>
+                            </div>
+                            <div class="text">
+                                <p>Total number of student</p>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="number float-left">
+                                <h1 style="color: #b505b5;">82%</h1>
+                            </div>
+                            <div class="text">
+                                <p>Attendance</p>
+                                <p class="attntxt">Last 30 days</p>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="number float-left">
+                                <h1 style="color: #ff7a00;">98%</h1>
+                            </div>
+                            <div class="text">
+                                <p>Passed</p>
+                                <p class="restxt">Half yearly exam 2019</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="school">
+                    <div class="school_name">
+                        <a href="#">
+                            <h5>Dhanmondi Boys High School</h5>
+                        </a>
+                    </div>
+                    <div class="school_info">
+                        <div class="info">
+                            <div class="number float-left">
+                                <h1 style="color: #1ca849;">8277</h1>
+                            </div>
+                            <div class="text">
+                                <p>Total number of student</p>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="number float-left">
+                                <h1 style="color: #b505b5;">88%</h1>
+                            </div>
+                            <div class="text">
+                                <p>Attendance</p>
+                                <p class="attntxt">Last 30 days</p>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="number float-left">
+                                <h1 style="color: #ff7a00;">88%</h1>
+                            </div>
+                            <div class="text">
+                                <p>Passed</p>
+                                <p class="restxt">Half yearly exam 2019</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="school">
+                    <div class="school_name">
+                        <a href="#">
+                            <h5>Dhanmondi Boys High School</h5>
+                        </a>
+                    </div>
+                    <div class="school_info">
+                        <div class="info">
+                            <div class="number float-left">
+                                <h1 style="color: #1ca849;">1000</h1>
+                            </div>
+                            <div class="text">
+                                <p>Total number of student</p>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="number float-left">
+                                <h1 style="color: #b505b5;">62%</h1>
+                            </div>
+                            <div class="text">
+                                <p>Attendance</p>
+                                <p class="attntxt">Last 30 days</p>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="number float-left">
+                                <h1 style="color: #ff7a00;">78%</h1>
+                            </div>
+                            <div class="text">
+                                <p>Passed</p>
+                                <p class="restxt">Half yearly exam 2019</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="p-2"></div>
+        <div class="row">
+
+            <div class="col-3">
+                <div class="school">
+                    <div class="school_name">
+                        <a href="#">
+                            <h5>Dhanmondi Boys High School</h5>
+                        </a>
+                    </div>
+                    <div class="school_info">
+                        <div class="info">
+                            <div class="number float-left">
+                                <h1 style="color: #1ca849;">8277</h1>
+                            </div>
+                            <div class="text">
+                                <p>Total number of student</p>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="number float-left">
+                                <h1 style="color: #b505b5;">88%</h1>
+                            </div>
+                            <div class="text">
+                                <p>Attendance</p>
+                                <p class="attntxt">Last 30 days</p>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="number float-left">
+                                <h1 style="color: #ff7a00;">88%</h1>
+                            </div>
+                            <div class="text">
+                                <p>Passed</p>
+                                <p class="restxt">Half yearly exam 2019</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="school">
+                    <div class="school_name">
+                        <a href="#">
+                            <h5>Dhanmondi Boys High School</h5>
+                        </a>
+                    </div>
+                    <div class="school_info">
+                        <div class="info">
+                            <div class="number float-left">
+                                <h1 style="color: #1ca849;">1000</h1>
+                            </div>
+                            <div class="text">
+                                <p>Total number of student</p>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="number float-left">
+                                <h1 style="color: #b505b5;">62%</h1>
+                            </div>
+                            <div class="text">
+                                <p>Attendance</p>
+                                <p class="attntxt">Last 30 days</p>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="number float-left">
+                                <h1 style="color: #ff7a00;">78%</h1>
+                            </div>
+                            <div class="text">
+                                <p>Passed</p>
+                                <p class="restxt">Half yearly exam 2019</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="school">
+                    <div class="school_name">
+                        <a href="#">
+                            <h5>Dhanmondi Boys High School</h5>
+                        </a>
+                    </div>
+                    <div class="school_info">
+                        <div class="info">
+                            <div class="number float-left">
+                                <h1 style="color: #1ca849;">1102</h1>
+                            </div>
+                            <div class="text">
+                                <p>Total number of student</p>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="number float-left">
+                                <h1 style="color: #b505b5;">85%</h1>
+                            </div>
+                            <div class="text">
+                                <p>Attendance</p>
+                                <p class="attntxt">Last 30 days</p>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="number float-left">
+                                <h1 style="color: #ff7a00;">99%</h1>
+                            </div>
+                            <div class="text">
+                                <p>Passed</p>
+                                <p class="restxt">Half yearly exam 2019</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+</body>
+
+</html>
